@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Issues Tracker</title>
+
+
+    <!-- daisyui + Tailwind  -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+     <!-- icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+     <!-- style.css  -->
+      <link rel="stylesheet" href="/style.css/font.css">
+
+
+</head>
+<body class="min-h-screen max-w-md bg-base-100 m-auto shadow-xl">
+    <div class="logo w-[100px] mx-auto pt-15">
+        <img src="./assets/github-logo.png" alt="">
+    </div>
+    <div class="text-center mt-4">
+        <h1 class="font-bold text-[25px]">GitHub Issues Tracker</h1>
+        <h3 class="text-base">Sign in to manage your issues</h3>
+    </div>
+
+
+    <div class="form pt-10">
+        
+        <div class="card w-full max-w-sm shrink-0 mx-auto">
+      
+
+      <div class="card-body">
+         <fieldset class="fieldset">
+          <label class="label text-black font-semibold py-1">Username</label>
+          <input id="input-username" type="text" class="input" placeholder="Enter Username" />
+         
+         
+          <div class="text-[#4a00ff] font-semibold py-1">Default: admin</div>
+
+
+          <label class="label text-black font-semibold py-1">Password</label>
+          <input id="input-password" type="password" class="input" placeholder="Enter Password" />
+          <div class="text-[#4a00ff] font-semibold py-1"><a class="link link-hover">Default: admin123</a></div>
+
+          <button id="login-btn" class="btn btn-primary mt-4">Sign In</button>
+
+        </fieldset>
+      </div>
+    </div>
+    </div>
+
+     <div  class="text-center py-15">
+        <div>
+        <h4 class="text-black p-3">OR</h4>
+      <p>Demo Credentials:</p>
+      </div>
+      <br>
+      <div>
+        <p><span class="text-black font-bold">Username:</span> admin</p>
+        <p><span class="text-black font-bold">Password:</span> admin123</p>
+      </div>
+      </div>
+
+
+
+    <script src="./script/login.js"></script>
+</body>
+</html>
