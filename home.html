@@ -3,9 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GitHub Issues Tracker</title>
+
+
+    <!-- daisyui + Tailwind  -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+     <!-- icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+     <!-- style.css  -->
+      <link rel="stylesheet" href="./style.css/font.css">
+
+
 </head>
-<body>
-    <h1>home page</h1>
+<body class="bg-green-50 min-h-screen">
+
+    <header>
+         <div class="navbar bg-base-100 shadow-sm p-8">
+  <div class="flex-1 flex items-center gap-2">
+
+    <img src="./assets/github-logo.png" class="w-8 h-8" alt="">
+
+    <a class="btn btn-ghost text-xl">GitHub Issues Tracker</a>
+
+  </div>
+
+  <div class="flex gap-2">
+    <input type="text" placeholder="Search issues..." class="input input-bordered w-24 md:w-auto" />
+
+    <button class="btn btn-primary"><i class="fa-solid fa-plus"></i>New Issue</button>
+
+  </div>
+</div>
+    </header>
+
+    <main class="">
+
+
+        <section class="w-[1110px] mx-auto border border-gray-50 bg-white py-6 rounded-md shadow-md p-8 mt-15">
+            <div>
+                <button class="btn btn-soft btn-primary">All</button>
+                <button class="btn btn-soft btn-primary">Open</button>
+                <button class="btn btn-soft btn-primary">Closed</button>
+            </div>
+            
+        </section>
+
+       
+
+       <section class="flex justify-between items-center w-[1110px] mx-auto border border-gray-50 bg-white py-6 rounded-md shadow-md p-8 mt-4">
+
+                    <div class="flex items-center gap-4">
+                        <img src="./assets/Aperture.png" class="w-8 h-8" alt="">
+
+                        <div>
+                          <h2 class="font-semibold text-lg">50 Issues</h2>
+                          <p class="text-sm text-gray-500">Track and manage your project issues</p>
+                        </div>
+                    </div>
+
+             <div class="flex gap-6">
+               <p class="flex items-center gap-2">
+                 <i class="fa-solid fa-circle text-green-500 text-xs"></i> Open
+                </p>
+                <p class="flex items-center gap-2">
+                <i class="fa-solid fa-circle text-purple-500 text-xs"></i> Closed
+                </p>
+              </div>
+        </section> 
+
+   
+
+
+             <!-- card section -->
+        <section class="w-[1110px] mx-auto border border-gray-50 bg-white rounded-md shadow-md py-6">
+
+            <div class="grid grid-cols-4 gap-6 p-6">
+
+                         <!-- Card -->
+               <div class="w-[256.5px] h-[253px] bg-white rounded-lg shadow-md border-t-4 border-green-500 p-4 flex flex-col justify-between">
+
+               <div class="flex justify-between items-center">
+              <div class="text-green-500">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+
+            <span class="bg-red-100 text-red-500 text-xs px-3 py-1 rounded-full">
+            HIGH</span>
+           </div>
+
+            <div>
+                 <h3 class="font-semibold text-sm mt-2">Fix Navigation Menu On Mobile Devices</h3>
+
+               <p class="text-xs text-gray-500 mt-2">The navigation menu doesn't collapse properly on mobile devices...</p>
+              </div>
+
+                 <div class="flex gap-2 mt-3">
+              <span class="bg-red-100 text-red-500 text-xs px-2 py-1 rounded-full">BUG</span>
+
+                <span class="bg-yellow-100 text-yellow-600 text-xs px-2 py-1 rounded-full">HELP WANTED</span>
+               </div>
+
+                <div class="text-xs text-gray-400 mt-3 border-t pt-2">
+                   <p>#1 by john_doe</p>
+                   <p>1/15/2024</p>
+                  </div>
+
+               </div>
+
+
+               <!-- 2. card -->
+               <div class="w-[256.5px] h-[253px] bg-white rounded-lg shadow-md border-t-4 border-green-500 p-4 flex flex-col justify-between">
+
+               <div class="flex justify-between items-center">
+              <div class="text-green-500">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+
+            <span class="bg-red-100 text-red-500 text-xs px-3 py-1 rounded-full">
+            HIGH</span>
+           </div>
+
+            <div>
+                 <h3 class="font-semibold text-sm mt-2">Fix Navigation Menu On Mobile Devices</h3>
+
+               <p class="text-xs text-gray-500 mt-2">The navigation menu doesn't collapse properly on mobile devices...</p>
+              </div>
+
+                 <div class="flex gap-2 mt-3">
+              <span class="bg-red-100 text-red-500 text-xs px-2 py-1 rounded-full">BUG</span>
+
+                <span class="bg-yellow-100 text-yellow-600 text-xs px-2 py-1 rounded-full">HELP WANTED</span>
+               </div>
+
+                <div class="text-xs text-gray-400 mt-3 border-t pt-2">
+                   <p>#1 by john_doe</p>
+                   <p>1/15/2024</p>
+                  </div>
+
+               </div>
+
+
+               <!-- 3. card -->
+               <div class="w-[256.5px] h-[253px] bg-white rounded-lg shadow-md border-t-4 border-purple-500 p-4 flex flex-col justify-between">
+
+               <div class="flex justify-between items-center">
+              <div class="text-green-500">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+
+            <span class="bg-red-100 text-red-500 text-xs px-3 py-1 rounded-full">
+            HIGH</span>
+           </div>
+
+            <div>
+                 <h3 class="font-semibold text-sm mt-2">Fix Navigation Menu On Mobile Devices</h3>
+
+               <p class="text-xs text-gray-500 mt-2">The navigation menu doesn't collapse properly on mobile devices...</p>
+              </div>
+
+                 <div class="flex gap-2 mt-3">
+              <span class="bg-red-100 text-red-500 text-xs px-2 py-1 rounded-full">BUG</span>
+
+                <span class="bg-yellow-100 text-yellow-600 text-xs px-2 py-1 rounded-full">HELP WANTED</span>
+               </div>
+
+                <div class="text-xs text-gray-400 mt-3 border-t pt-2">
+                   <p>#1 by john_doe</p>
+                   <p>1/15/2024</p>
+                  </div>
+
+               </div>
+
+
+               <!-- 4. card -->
+               <div class="w-[256.5px] h-[253px] bg-white rounded-lg shadow-md border-t-4 border-green-500 p-4 flex flex-col justify-between">
+
+               <div class="flex justify-between items-center">
+              <div class="text-green-500">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+
+            <span class="bg-red-100 text-red-500 text-xs px-3 py-1 rounded-full">
+            HIGH</span>
+           </div>
+
+            <div>
+                 <h3 class="font-semibold text-sm mt-2">Fix Navigation Menu On Mobile Devices</h3>
+
+               <p class="text-xs text-gray-500 mt-2">The navigation menu doesn't collapse properly on mobile devices...</p>
+              </div>
+
+                 <div class="flex gap-2 mt-3">
+              <span class="bg-red-100 text-red-500 text-xs px-2 py-1 rounded-full">BUG</span>
+
+                <span class="bg-yellow-100 text-yellow-600 text-xs px-2 py-1 rounded-full">HELP WANTED</span>
+               </div>
+
+                <div class="text-xs text-gray-400 mt-3 border-t pt-2">
+                   <p>#1 by john_doe</p>
+                   <p>1/15/2024</p>
+                  </div>
+
+               </div>
+
+            </div>
+
+        </section>
+
+
+     
+
+
+
+        
+
+    </main>
+
 </body>
 </html>
